@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        xmlns:c="http://jmix.io/schema/ui/jpql-condition"
+        caption="msg://calendar.caption"
+        focusComponent="container">
+    <data readOnly="true">
+        <collection id="eventsDc"
+                    class="com.company.assmblycalendar.entity.Event">
+            <fetchPlan extends="_base"/>
+            <loader id="eventsDl">
+                <query>
+                    <![CDATA[select e from Event e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+        <screenSettings id="settingsFacet" auto="true"/>
+    </facets>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="container" spacing="true" width="100%" height="100%">
+        <buttonsPanel id="buttonsPanel"
+                      alwaysVisible="true" align="TOP_RIGHT">
+            <comboBox id="calendarViewType" nullOptionVisible="false" optionsEnum="com.company.assmblycalendar.entity.CalendarViewType"/>
+            <button id="prevBtn" icon="font-icon:CHEVRON_CIRCLE_LEFT" />
+            <button id="todayBtn" caption="Today"/>
+            <button id="nextBtn"  icon="font-icon:CHEVRON_CIRCLE_RIGHT"/>
+        </buttonsPanel>
+        <vbox id="container" width="100%" spacing="true">
+            <fragment id="week1" screen="Week" width="100%" height="100%"/>
+            <fragment id="week2" screen="Week" width="100%" height="100%"/>
+            <fragment id="week3" screen="Week" width="100%" height="100%"/>
+            <fragment id="week4" screen="Week" width="100%" height="100%"/>
+        </vbox>
+    </layout>
+</window>

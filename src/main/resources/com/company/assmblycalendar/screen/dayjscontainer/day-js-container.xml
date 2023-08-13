@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragment xmlns="http://jmix.io/schema/ui/fragment">
+    <layout width="100%" height="100%">
+        <vbox expand="dayContainer" height="100%" width="100%">
+            <label stylename="day-header" height="20" value="2"/>
+            <jsComponent width="100%"  id="dayContainer"
+                         initFunctionName="ui_ex1_components_javascript_SortableJs">
+                <dependencies>
+                    <dependency path="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"/>
+                    <dependency path="vaadin://sortablejs/sortablejs-connector.js"/>
+                </dependencies>
+            </jsComponent>
+        </vbox>
+    </layout>
+</fragment>

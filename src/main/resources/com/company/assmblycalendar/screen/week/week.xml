@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragment xmlns="http://jmix.io/schema/ui/fragment">
+    <layout height="100%" width="100%">
+        <hbox id="hBox" width="100%" height="100%" spacing="true">
+            <fragment id="day1" screen="DayJsContainer" width="100%" height="100%"/>
+            <fragment id="day2" screen="DayJsContainer" width="100%" height="100%"/>
+            <fragment id="day3" screen="DayJsContainer" width="100%" height="100%"/>
+            <fragment id="day4" screen="DayJsContainer" width="100%" height="100%"/>
+            <fragment id="day5" screen="DayJsContainer" width="100%" height="100%"/>
+        </hbox>
+    </layout>
+</fragment>

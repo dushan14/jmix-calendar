@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <item screen="calendar" caption="msg://com.company.assmblycalendar.screen.event/calendar.menu"/>
+    <item screen="Event.browse" caption="msg://com.company.assmblycalendar.screen.event/eventBrowse.menu"/>
+<!--    <item screen="UserAlt.browse" caption="msg://com.company.assmblycalendar.screen.user/userAltBrowse.menu"/>-->
+<!--    <item screen="TextEditor" caption="msg://com.company.assmblycalendar.screen.texteditor/textEditor.caption"/>-->
+<!--    <menu id="application" caption="msg://com.company.assmblycalendar/menu.application" insertBefore="administration">-->
+<!--        <item screen="User.browse" caption="msg://com.company.assmblycalendar.screen.user/UserBrowse.caption"/>-->
+<!--        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>-->
+<!--        <item screen="Week" caption="msg://com.company.assmblycalendar.screen.week/week.caption"/>-->
+<!--    </menu>-->
+
+</menu-config>
